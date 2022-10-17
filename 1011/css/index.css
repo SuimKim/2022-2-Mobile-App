@@ -1,0 +1,49 @@
+.mainimgbox{
+    padding: 20px 100px 20px 100px;
+}
+.maintbox{
+    margin-bottom: 30px;
+}
+.maintbox h1{
+    font-size: 20pt;
+    margin-bottom: 10px;
+    color: grey;
+}
+.maintbox span{
+    font-size: 30pt;
+    font-weight: bold;
+    color: black;
+}
+.introli li{
+    list-style-type: none;
+}
+#flush-collapseThree img{
+    width: 20%;
+    margin: 5%;
+    display: inline-block;
+}
+
+.pagelist{
+    padding: 10px;
+    height: 320px;
+    border-radius: 20px;
+    background-color: rgba(212, 232, 239, 0.521);
+}
+.pagelist h2{
+    margin: 10px 0 30px 0;
+}
+.column{
+    background-color: white;
+    margin: 10px;
+    height: 100px;
+    border-radius: 10px;
+    line-height: 90px;
+}
+.column a{
+    text-decoration: none;
+    font-size: 10pt;
+}
+/*--------------------*/
+.skillli{
+    background-color: black;
+}
