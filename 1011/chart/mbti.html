@@ -1,0 +1,80 @@
+<!--
+	THIS EXAMPLE WAS DOWNLOADED FROM https://echarts.apache.org/examples/en/editor.html?c=bar-background&code=PYBwLglsB2AEC8sDeAoWtJgDYFMBcya6GOAHmAQOQCyAnrNQEIAqAkpQDRHq4BmFsSgGMc0MDgBOlIgF8u6UgEFSEAM4FUxDLRD5BANwCGWAK45p6OUVrK1G7tt1Uhh8QHNgE2pwcATV4YEANqUgB7jgLtDsAAKnIKACDWAqBOwAGKxlIAga4AnQ7AAymmALQ2Apauw7AC6DrLysKqSEDjqsEEOmlqw_mCBjQCsAGwcsD0ATP0AjAAMY_0AHADspVVaYDp6lABGhlILxKoAFsAA7oyGQgDWbhLAJtC-BGASZls8hqs4WPat23v7t_c4j8QgYCqCCQGBUCDQYG-cwOSz_danc6Xa45Ja4d4fWBCYBYTxUCRudYAChGU0msFJ5Mp_TGADpBgBKCytGQOVnocoyADcQA
+	⚠ Please be aware that this chart is not an official demo of Apache ECharts but is made by user-generated code.
+-->
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+<head>
+  <meta charset="utf-8">
+</head>
+<body style="height: 100%; margin: 0">
+        <div id="container" style="height: 100%"></div>
+  
+
+  
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.0/dist/echarts.min.js"></script>
+  <!-- Uncomment this line if you want to dataTool extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.0/dist/extension/dataTool.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use gl extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-gl@2/dist/echarts-gl.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-stat extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-stat@latest/dist/ecStat.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use map
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/china.js"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/world.js"></script>
+  -->
+  <!-- Uncomment these two lines if you want to use bmap extension
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=YOUR_API_KEY"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.0/dist/extension/bmap.min.js"></script>
+  -->
+
+  <script type="text/javascript">
+    var dom = document.getElementById('container');
+    var myChart = echarts.init(dom, null, {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+    var app = {};
+    
+    var option;
+
+    option = {
+  title: {
+    text: 'My MBTI is ISFP',
+    left: 'center'
+  },
+  xAxis: {
+    type: 'value'
+  },
+  yAxis: {
+    type: 'category',
+    data: [' P', ' F', ' S', ' I']
+    
+  },
+  series: [
+    {
+      data: [56, 62, 100, 87],
+      type: 'bar',
+      showBackground: true,
+      label: {
+        show: true,
+        position: 'inside'
+      },
+      backgroundStyle: {
+        color: 'rgba(180, 180, 180, 0.2)'
+      }
+    }
+  ]
+};
+
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+  </script>
+</body>
+</html>
