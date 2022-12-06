@@ -69,6 +69,10 @@
 >cordova run android --list
 >cordova run android
 
+10. css, js 파일 CDN -> 다운로드 방식으로 수정
+
+11. <script src="cordova.js"> </script> 코드 추가 
+
 </p>
 <br>
 
